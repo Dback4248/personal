@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 public class MovemenrPM : MonoBehaviour
 {
@@ -44,15 +43,4 @@ public class MovemenrPM : MonoBehaviour
             // Get the GameObject's RigigBody2D component and set its velocity to the left at given speed
              _rb.velocity = Vector2.left * speed;
         }
-
-
-            if (Input.GetKey(KeyCode.D))    //Check for the player HOLDING DOWN the left button
-
-
-            {
-                // Get the GameObject's RigigBody2D component and set its velocity to the left at given speed
-                _rb.velocity = Vector2.left * speed;
-            }   
-                
-
-                    
+ 
