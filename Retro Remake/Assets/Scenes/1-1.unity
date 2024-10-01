@@ -2166,6 +2166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  maxJumpHeight: 5
+  maxJumpTime: 1
 --- !u!1001 &493245764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5186,6 +5188,7 @@ GameObject:
   - component: {fileID: 1077223790}
   - component: {fileID: 1077223789}
   - component: {fileID: 1077223792}
+  - component: {fileID: 1077223793}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5292,6 +5295,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1077223793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077223788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 064920dd59aa3764e9c9a818ced08d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1082690794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9804,6 +9819,10 @@ PrefabInstance:
     - target: {fileID: 1429198871049758800, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
       propertyPath: m_Name
       value: Mario
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429198871049758800, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6843281638984342469, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
       propertyPath: m_RootOrder
