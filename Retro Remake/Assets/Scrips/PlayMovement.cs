@@ -20,7 +20,6 @@ public class PlayMovement : MonoBehaviour
     public float Gravity => (-2f * maxJumpHeight) / Mathf.Pow((maxJumpTime / 2f), 2f);
 
     public bool Grounded { get; private set; }
-    public bool Jumping { get; private set; }
     private float inputAxis;
 
     private void Awake()
@@ -31,7 +30,7 @@ public class PlayMovement : MonoBehaviour
 
     private void Update()
     {
-        HorizontalMovement();
+        HorizontalMovement(); 
     }
 
     private void HorizontalMovement()

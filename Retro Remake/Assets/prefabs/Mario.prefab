@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6843281638984342469}
   - component: {fileID: 770465573963946677}
   - component: {fileID: 6948480489333316235}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Mario
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 202567960816753964}
   - {fileID: 2573897482193659569}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &770465573963946677
 Rigidbody2D:
@@ -82,7 +82,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2573897482193659569}
   - component: {fileID: 4783501361844883812}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 202567960816753964}
   - component: {fileID: 296063537126968692}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
