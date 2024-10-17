@@ -9821,8 +9821,20 @@ PrefabInstance:
       value: Mario
       objectReference: {fileID: 0}
     - target: {fileID: 1429198871049758800, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1429198871049758800, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1586892621510904703, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4373391990304014729, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6843281638984342469, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
       propertyPath: m_RootOrder
@@ -9867,6 +9879,18 @@ PrefabInstance:
     - target: {fileID: 6843281638984342469, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948480489333316235, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Size.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948480489333316235, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948480489333316235, guid: e4fccc6b0ac89e042b808ce3347976bb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.375
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

@@ -32,12 +32,41 @@ public class PlayMovement : MonoBehaviour
     private void Update()
     {
         HorizontalMovement();
+        Grounded = rigidbody.Raycast(Vector2.down);
+
+        if (Grounded) {
+            GroundedMovement();
+        }
+
+        ApplyGravity();
+       
     }
 
     private void HorizontalMovement()
     {
         inputAxis = Input.GetAxis("Horizontal");
         velocity.x = Mathf.MoveTowards(velocity.x, inputAxis * moveSpeed, moveSpeed * Time.deltaTime);
+    }
+
+    private void GroundedMovement()
+    {
+        
+        Jumping = velocity.y > 0f;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            velocity.y = JumpForce;
+            Jumping = true;
+        }
+    }
+
+    private void ApplyGravity()
+    {
+        bool falling = velocity.y < 0f || !Input.GetButton("Jump");
+        float multiplier = falling ? 2f : 1f;
+
+        velocity.y += Gravity * multiplier * Time.deltaTime;
+        velocity.y = Mathf.Max(velocity.y, Gravity / 2f);
     }
 
     private void FixedUpdate()
